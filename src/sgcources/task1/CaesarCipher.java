@@ -1,8 +1,6 @@
 package sgcources.task1;
 
 import java.io.*;
-import java.util.LinkedList;
-import java.util.List;
 
 public class CaesarCipher {
     private final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
