@@ -33,7 +33,7 @@ public class Test {
 
     }
 
-    private static void announceTest(String testName) {
+    protected static void announceTest(String testName) {
         System.out.println();
         System.out.println(testName);
     }
