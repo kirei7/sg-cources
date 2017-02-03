@@ -7,6 +7,7 @@ public class Test {
     public static void main(String[] args) {
         EarthQuakeClient client = new EarthQuakeClient();
         ClosestQuakes closestQuakes = new ClosestQuakes();
+        LargestQuakes largestQuakes = new LargestQuakes();
 
         announceTest("bigQuakes Test");
         client.bigQuakes();
@@ -26,6 +27,10 @@ public class Test {
 
         announceTest("findClosestQuakes Test");
         closestQuakes.findClosestQuakes();
+
+        announceTest("findLargestQuakes Test");
+        largestQuakes.findLargestQuakes​();
+
     }
 
     private static void announceTest(String testName) {
