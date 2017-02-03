@@ -8,10 +8,16 @@ public class MagnitudeFilter implements Filter {
 
     private final double minMag;
     private final double maxMag;
+    private final String name;
+    @Override
+    public String getName() {
+        return name;
+    }
 
-    public MagnitudeFilter(double minMag, double maxMag) {
+    public MagnitudeFilter(double minMag, double maxMag, String name) {
         this.minMag = minMag;
         this.maxMag = maxMag;
+        this.name = name;
     }
     public double getMaxMag() {
         return maxMag;

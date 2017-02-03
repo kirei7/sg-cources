@@ -8,14 +8,21 @@ package sgcources.part2.task2.program;
  */
 public class MinMagFilter implements Filter
 {
-    private double magMin; 
+    private double magMin;
+    private String name;
     
-    public MinMagFilter(double min) { 
+    public MinMagFilter(double min, String name) {
         magMin = min;
+        this.name = name;
     } 
 
     public boolean satisfies(QuakeEntry qe) { 
         return qe.getMagnitude() >= magMin; 
-    } 
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
 
 }

@@ -9,5 +9,11 @@ public class Test extends sgcources.part2.task1.Test{
         announceTest("quakesWithFilter Test");
         client.quakesWithFilter();
 
+        announceTest("testMatchAllFilter Test");
+        client.testMatchAllFilter();
+        announceTest("testMatchAllFilter2 Test");
+        client.testMatchAllFilter2​();
+
+
     }
 }

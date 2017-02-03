@@ -10,5 +10,6 @@ import sgcources.part2.task2.program.QuakeEntry;
  */
 public interface Filter
 {
-    public  boolean satisfies(QuakeEntry qe);
+    boolean satisfies(QuakeEntry qe);
+    String getName();
 }

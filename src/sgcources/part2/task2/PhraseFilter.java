@@ -8,10 +8,16 @@ public class PhraseFilter implements Filter {
     //I bet it should be Enum
     private final String requestType;
     private final String phrase;
+    private final String name;
+    @Override
+    public String getName() {
+        return name;
+    }
 
-    public PhraseFilter(String requestType, String phrase) {
+    public PhraseFilter(String requestType, String phrase, String name) {
         this.requestType = requestType;
         this.phrase = phrase;
+        this.name = name;
     }
     public String getRequestType() {
         return requestType;

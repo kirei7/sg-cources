@@ -7,10 +7,17 @@ public class DepthFilter implements Filter {
 
     private final double minDepth;
     private final double maxDepth;
+    //this field has to be moved to an abstract class
+    private final String name;
+    @Override
+    public String getName() {
+        return name;
+    }
 
-    public DepthFilter(double minDepth, double maxDepth) {
+    public DepthFilter(double minDepth, double maxDepth, String name) {
         this.minDepth = minDepth;
         this.maxDepth = maxDepth;
+        this.name = name;
     }
     public double getMaxDepth() {
         return maxDepth;
@@ -24,4 +31,6 @@ public class DepthFilter implements Filter {
         double depth = qe.getDepth();
         return (depth >= getMinDepth() && depth <= getMaxDepth() );
     }
+
+
 }

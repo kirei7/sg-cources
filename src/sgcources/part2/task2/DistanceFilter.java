@@ -8,10 +8,16 @@ public class DistanceFilter implements Filter {
 
     private final Location location;
     private final double maxDistance;
+    private final String name;
+    @Override
+    public String getName() {
+        return name;
+    }
 
-    public DistanceFilter(Location location, double maxDistance) {
+    public DistanceFilter(Location location, double maxDistance, String name) {
         this.location = location;
         this.maxDistance = maxDistance;
+        this.name = name;
     }
     public Location getLocation() {
         return location;
