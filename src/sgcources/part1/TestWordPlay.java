@@ -1,4 +1,4 @@
-package sgcources.task1;
+package sgcources.part1;
 
 import sgcources.TestNotPassedException;
 
