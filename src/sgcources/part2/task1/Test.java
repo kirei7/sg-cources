@@ -1,7 +1,7 @@
-package sgcources.part2;
+package sgcources.part2.task1;
 
-import sgcources.part2.program.ClosestQuakes;
-import sgcources.part2.program.EarthQuakeClient;
+import sgcources.part2.task1.program.ClosestQuakes;
+import sgcources.part2.task1.program.EarthQuakeClient;
 
 public class Test {
     public static void main(String[] args) {

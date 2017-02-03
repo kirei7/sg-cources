@@ -1,4 +1,4 @@
-package sgcources.part2.program;
+package sgcources.part2.task1.program;
 /**
  * Find N-closest quakes
  * 

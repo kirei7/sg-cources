@@ -1,7 +1,7 @@
-package sgcources.part2;
+package sgcources.part2.task1;
 
-import sgcources.part2.program.EarthQuakeParser;
-import sgcources.part2.program.QuakeEntry;
+import sgcources.part2.task1.program.EarthQuakeParser;
+import sgcources.part2.task1.program.QuakeEntry;
 
 import java.util.*;
 
